@@ -1,0 +1,16 @@
+{
+  "extends": "@adonisjs/tsconfig/tsconfig.client.json",
+  "vueCompilerOptions": {
+    "plugins": ["@vue/language-plugin-pug"]
+  },
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "module": "ESNext",
+    "jsxImportSource": "vue",
+    "paths": {
+      "~/*": ["./*"]
+    }
+  },
+  "include": ["./**/*.ts", "./**/*.vue"]
+}
